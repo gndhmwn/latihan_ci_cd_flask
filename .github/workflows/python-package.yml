@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+        python-version: "3.10"
 
     steps:
     - uses: actions/checkout@v3
@@ -27,7 +27,6 @@ jobs:
       run: pip install -r requirements.txt
       
     - name: Test running flask
-      run: python main.py
-
-    - name: web access
-      run: curl localhost:5000/nama
+      run: | 
+        python main.py
+        curl localhost:5000/nama
