@@ -29,5 +29,5 @@ jobs:
     - name: Test running flask
       run: python main.py
 
-    - nama: web access
+    - name: web access
       run: curl localhost:5000/nama
