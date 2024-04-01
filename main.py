@@ -11,9 +11,9 @@ def index():
 def nama():
     return 'Ganda Himawan'
 
-@app.route('/alamat')
-def alamat():
-   return 'Medan Marelan'
+# @app.route('/alamat')
+# def alamat():
+#    return 'Medan Marelan'
 
 if __name__ == '__main__':
     app.run()
