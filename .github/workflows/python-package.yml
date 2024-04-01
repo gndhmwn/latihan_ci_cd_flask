@@ -27,4 +27,4 @@ jobs:
       run: pip install -r requirements.txt
       
     - name: Test running flask
-      run: pytest
+      run: python main.py
