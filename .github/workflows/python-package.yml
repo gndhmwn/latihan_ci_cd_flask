@@ -27,6 +27,4 @@ jobs:
       run: pip install -r requirements.txt
       
     - name: Test running flask
-      run: | 
-        python main.py
-        curl localhost:5000/nama
+      run: pytest
